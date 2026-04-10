@@ -19,7 +19,21 @@
     "introDesc": "30 soul-searching questions, 15-dimension deep scan, 27 personality types precisely matched.\nReady to face the real you?",
     "introNote": "Runs locally · No data upload · ~3-5 min",
     "progressFormat": "{current} / {total}",
-    "rarityLabel": "{rarityName} · {rarity}"
+    "rarityLabel": "{rarityName} · {rarity}",
+    "pkResult": "⚔️ PK Battle Result",
+    "pkHarmony": "Harmony",
+    "pkDimensions": "Dimension Comparison",
+    "pkCard": "PK Share Card",
+    "pkInvite": "Invite Friend to PK",
+    "pkLoading": "Loading...",
+    "pkWaitingTitle": "You received a PK challenge!",
+    "pkWaitingDesc": "Your friend has completed the personality test. Now it's your turn! Complete the test to see your comparison.",
+    "pkStartQuiz": "[ Accept Challenge ]",
+    "pkSkip": "Skip, go to homepage",
+    "savePKCard": "[ Save PK Card ]",
+    "copyLink": "Copy",
+    "pkInviteDesc": "Share the link with a friend to compare results!",
+    "locale": "en"
   },
   "rarity": {
     "SSR": "Legendary",

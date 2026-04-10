@@ -19,7 +19,21 @@
     "introDesc": "30 道灵魂拷问，15 个维度深度扫描，27 种人格精准匹配。\n准备好面对真实的自己了吗？",
     "introNote": "纯前端运行 · 无数据上传 · 约 3-5 分钟",
     "progressFormat": "{current} / {total}",
-    "rarityLabel": "{rarityName} · {rarity}"
+    "rarityLabel": "{rarityName} · {rarity}",
+    "pkResult": "⚔️ PK 对决结果",
+    "pkHarmony": "默契度",
+    "pkDimensions": "维度对比",
+    "pkCard": "PK 分享卡片",
+    "pkInvite": "邀请好友 PK",
+    "pkLoading": "加载中...",
+    "pkWaitingTitle": "你收到了一个 PK 挑战！",
+    "pkWaitingDesc": "你的好友已经完成了人格测试，现在轮到你了。完成测试后即可查看双方的对比结果！",
+    "pkStartQuiz": "[ 接受挑战 ]",
+    "pkSkip": "跳过，返回首页",
+    "savePKCard": "[ 保存 PK 卡片 ]",
+    "copyLink": "复制",
+    "pkInviteDesc": "分享链接给好友，完成 PK 对比！",
+    "locale": "zh"
   },
   "rarity": {
     "SSR": "传说",

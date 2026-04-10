@@ -3,8 +3,12 @@ import { useQuizStore } from '../store/quizStore'
 import { CATEGORIES } from '../utils/scoring'
 import { RadarChart } from './RadarChart'
 import { ShareCard } from './ShareCard'
+import { lazy, Suspense, useState, useCallback } from 'react'
 import { useI18n, useLocalizedPersonalities } from '../i18n'
 import { personalities } from '../data/personalities'
+import { buildPKShareUrl } from '../utils/pk-encoding'
+
+const AIInterpreter = lazy(() => import('./AIInterpreter').then(m => ({ default: m.AIInterpreter })))
 
 const RARITY_COLORS: Record<string, string> = {
   SSR: 'text-neon-yellow',
@@ -32,6 +36,26 @@ export function ResultPage() {
   const storeReset = useQuizStore((s) => s.reset)
   const setPhase = useQuizStore((s) => s.setPhase)
   const { t } = useI18n()
+  const [pkCopied, setPkCopied] = useState(false)
+
+  const pkLink = result
+    ? buildPKShareUrl(
+        window.location.origin + window.location.pathname,
+        result.personality.code,
+        scores,
+      )
+    : ''
+
+  const handleCopyPK = useCallback(async () => {
+    try {
+      await navigator.clipboard.writeText(pkLink)
+    } catch {
+      // fallback: select text
+    }
+    setPkCopied(true)
+    setTimeout(() => setPkCopied(false), 2000)
+  }, [pkLink])
+
   const localizedPersonalities = useLocalizedPersonalities(personalities)
   const localizedRankings = useLocalizedPersonalities(rankings.map((r) => r.personality))
     .map((lp, i) => ({ ...rankings[i], personality: lp }))
@@ -102,7 +126,16 @@ export function ResultPage() {
         </div>
       </div>
 
-      <div className="cyber-card rounded-xl p-5 sm:p-6 space-y-4 animate-fade-in-up delay-400">
+      <div className="animate-fade-in-up delay-400">
+        <Suspense fallback={<div className="h-32 animate-pulse bg-cyber-surface rounded-lg" />}>
+          <AIInterpreter
+            personalityCode={result.personality.code}
+            dimensionVector={dimensionVector}
+          />
+        </Suspense>
+      </div>
+
+      <div className="cyber-card rounded-xl p-5 sm:p-6 space-y-4 animate-fade-in-up delay-500">
         <h3 className="text-neon-purple font-bold text-sm tracking-wide">{t('app.dimensionTitle')}</h3>
         <p className="text-cyber-muted/50 text-xs font-mono bg-cyber-bg/50 rounded px-2 py-1 inline-block">
           {vectorString}
@@ -142,14 +175,14 @@ export function ResultPage() {
         </div>
       </div>
 
-      <div className="cyber-card rounded-xl p-4 animate-fade-in-up delay-500">
+      <div className="cyber-card rounded-xl p-4 animate-fade-in-up delay-600">
         <h3 className="text-neon-purple font-bold text-sm mb-3 text-center tracking-wide">
           {t('app.shareCardTitle')}
         </h3>
         <ShareCard personality={result.personality} scores={scores} />
       </div>
 
-      <details className="cyber-card rounded-xl overflow-hidden animate-fade-in-up delay-500">
+      <details className="cyber-card rounded-xl overflow-hidden animate-fade-in-up delay-700">
         <summary className="px-5 py-3 text-sm text-cyber-muted cursor-pointer hover:text-cyber-text transition-colors">
           {t('app.allRankings')}
         </summary>
@@ -174,7 +207,29 @@ export function ResultPage() {
         </div>
       </details>
 
-      <div className="text-center animate-fade-in delay-700 pb-4">
+      <div className="cyber-card rounded-xl p-4 animate-fade-in-up delay-[750ms]">
+        <h3 className="text-neon-cyan font-bold text-sm mb-3 text-center tracking-wide">
+          ⚔️ {t('app.pkInvite')}
+        </h3>
+        <p className="text-cyber-muted text-xs text-center mb-3">
+          {t('app.pkInviteDesc')}
+        </p>
+        <div className="flex gap-2">
+          <input
+            readOnly
+            value={pkLink}
+            className="flex-1 bg-cyber-bg border border-cyber-border rounded-lg px-3 py-2 text-xs text-cyber-muted font-mono truncate"
+          />
+          <button
+            onClick={handleCopyPK}
+            className="px-3 py-2 bg-neon-cyan/10 border border-neon-cyan/50 text-neon-cyan rounded-lg text-xs cursor-pointer hover:bg-neon-cyan/20 transition-all"
+          >
+            {pkCopied ? '✓' : t('app.copyLink')}
+          </button>
+        </div>
+      </div>
+
+      <div className="text-center animate-fade-in delay-[800ms] pb-4">
         <button
           onClick={handleRestart}
           className="cyber-btn px-8 py-3 bg-neon-pink/10 border border-neon-pink/50 text-neon-pink rounded-lg

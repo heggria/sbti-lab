@@ -1,5 +1,6 @@
 import { create } from 'zustand'
 import type { QuizAnswer, QuizPhase, MatchResult } from '../types'
+import type { PKChallengeData } from '../utils/pk-encoding'
 
 interface QuizState {
   phase: QuizPhase
@@ -8,6 +9,7 @@ interface QuizState {
   specialAnswers: Record<string, number>
   result: MatchResult | null
   startTime: number | null
+  pkChallenge: PKChallengeData | null
 
   setPhase: (phase: QuizPhase) => void
   answerQuestion: (questionId: string, value: number) => void
@@ -15,6 +17,7 @@ interface QuizState {
   nextQuestion: () => void
   prevQuestion: () => void
   setResult: (result: MatchResult) => void
+  setPKChallenge: (challenge: PKChallengeData) => void
   reset: () => void
 }
 
@@ -25,6 +28,7 @@ export const useQuizStore = create<QuizState>((set) => ({
   specialAnswers: {},
   result: null,
   startTime: null,
+  pkChallenge: null,
 
   setPhase: (phase) =>
     set({ phase, ...(phase === 'quiz' ? { startTime: Date.now() } : {}) }),
@@ -51,6 +55,8 @@ export const useQuizStore = create<QuizState>((set) => ({
 
   setResult: (result) => set({ result }),
 
+  setPKChallenge: (challenge) => set({ pkChallenge: challenge }),
+
   reset: () =>
     set({
       phase: 'intro',
@@ -59,5 +65,6 @@ export const useQuizStore = create<QuizState>((set) => ({
       specialAnswers: {},
       result: null,
       startTime: null,
+      pkChallenge: null,
     }),
 }))

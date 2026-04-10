@@ -68,4 +68,4 @@ export interface QuizAnswer {
   value: number
 }
 
-export type QuizPhase = 'intro' | 'quiz' | 'result'
+export type QuizPhase = 'intro' | 'quiz' | 'result' | 'pk-waiting' | 'pk-compare'

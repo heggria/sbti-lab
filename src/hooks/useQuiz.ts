@@ -45,6 +45,7 @@ export function useQuiz() {
   const handleAnswer = useCallback(
     (value: number) => {
       if (!currentQuestion) return
+      try { navigator.vibrate?.(10) } catch { /* no-op */ }
       store.answerQuestion(currentQuestion.id, value)
       if (isLastQuestion) {
         const allAnswers = [
@@ -53,7 +54,11 @@ export function useQuiz() {
         ]
         const result = matchPersonality(allAnswers, questions, store.specialAnswers)
         store.setResult(result)
-        store.setPhase('result')
+        if (store.pkChallenge) {
+          store.setPhase('pk-compare')
+        } else {
+          store.setPhase('result')
+        }
       } else {
         setTimeout(() => store.nextQuestion(), 300)
       }

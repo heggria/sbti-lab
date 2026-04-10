@@ -115,6 +115,10 @@ body {
   background-color: var(--color-cyber-bg);
   position: relative;
   overflow-x: hidden;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  overscroll-behavior: none;
 }
 
 body::before {
@@ -231,6 +235,11 @@ body::after {
   position: relative;
   overflow: hidden;
   transition: all 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.cyber-btn:active {
+  transform: scale(0.96);
 }
 
 .cyber-btn::after {
@@ -245,6 +254,7 @@ body::after {
   );
   transform: translateX(-100%);
   transition: transform 0.5s ease;
+  pointer-events: none;
 }
 
 .cyber-btn:hover::after {
@@ -323,5 +333,24 @@ body::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+@media (hover: none) {
+  .cyber-btn:hover {
+    background-color: inherit;
+  }
+}
+
+@media (hover: hover) {
+  .cyber-card:hover {
+    border-color: rgba(0, 240, 255, 0.2);
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.05);
+  }
+}
+
+@media (max-width: 380px) {
+  .cyber-card {
+    border-radius: 8px;
   }
 }
