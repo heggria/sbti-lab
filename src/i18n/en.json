@@ -1,0 +1,356 @@
+{
+  "app": {
+    "title": "Cyberpunk Personality Lab",
+    "subtitle": "SBTI Lab",
+    "startBtn": "[ Start Test ]",
+    "restartBtn": "[ Retake Test ]",
+    "prevQuestion": "← Previous",
+    "swipeHint": "Swipe: ← A / → B / ↑ C",
+    "saveCard": "[ Save Share Card ]",
+    "exporting": "Exporting...",
+    "allRankings": "All Personality Rankings",
+    "dimensionTitle": "15 Dimensions",
+    "radarTitle": "Dimension Radar",
+    "shareCardTitle": "Share Card",
+    "matchRate": "Match",
+    "population": "Population",
+    "dimensionRadar": "Dimension Radar",
+    "footer": "SBTI Lab — Cyberpunk Personality Lab",
+    "introDesc": "30 soul-searching questions, 15-dimension deep scan, 27 personality types precisely matched.\nReady to face the real you?",
+    "introNote": "Runs locally · No data upload · ~3-5 min",
+    "progressFormat": "{current} / {total}",
+    "rarityLabel": "{rarityName} · {rarity}"
+  },
+  "rarity": {
+    "SSR": "Legendary",
+    "SR": "Super Rare",
+    "R": "Rare",
+    "N": "Normal"
+  },
+  "category": {
+    "S": "Self",
+    "E": "Emotion",
+    "A": "Attitude",
+    "Ac": "Action",
+    "So": "Social"
+  },
+  "question": {
+    "q1": {
+      "text": "I'm not just a loser, I'm a joker, I'm a salted fish. Never been in a relationship, timid and insecure. My youth was nothing but fantasy after fantasy...",
+      "option1": "I'm crying...",
+      "option2": "What is this...",
+      "option3": "That's not me!"
+    },
+    "q2": {
+      "text": "I'm not good enough, everyone around me is better.",
+      "option1": "True",
+      "option2": "Sometimes",
+      "option3": "Not true"
+    },
+    "q3": {
+      "text": "I know clearly who I really am.",
+      "option1": "Disagree",
+      "option2": "Neutral",
+      "option3": "Agree"
+    },
+    "q4": {
+      "text": "I have something I truly pursue deep inside.",
+      "option1": "Disagree",
+      "option2": "Neutral",
+      "option3": "Agree"
+    },
+    "q5": {
+      "text": "I must keep climbing and becoming stronger.",
+      "option1": "Disagree",
+      "option2": "Neutral",
+      "option3": "Agree"
+    },
+    "q6": {
+      "text": "Others' opinions don't matter to me at all.",
+      "option1": "Disagree",
+      "option2": "Neutral",
+      "option3": "Agree"
+    },
+    "q7": {
+      "text": "Your partner hasn't replied for 5 hours, claiming diarrhea. What do you think?",
+      "option1": "Diarrhea doesn't take 5 hours. They must be hiding something.",
+      "option2": "Wavering between trust and suspicion.",
+      "option3": "Maybe they're really not feeling well today."
+    },
+    "q8": {
+      "text": "I often worry about being abandoned in relationships.",
+      "option1": "Yes",
+      "option2": "Sometimes",
+      "option3": "No"
+    },
+    "q9": {
+      "text": "I swear, I take every relationship seriously!",
+      "option1": "Not really",
+      "option2": "Maybe?",
+      "option3": "Yes! (proud face with clear conscience)"
+    },
+    "q10": {
+      "text": "Your partner is kind, gentle, upright, eloquent, knowledgeable, handsome/beautiful... What do you do?",
+      "option1": "Even if they're amazing, I won't fall too deep.",
+      "option2": "Somewhere between A and C.",
+      "option3": "I'd cherish them deeply, maybe become love-brained."
+    },
+    "q11": {
+      "text": "After dating, your partner becomes very clingy. What do you think?",
+      "option1": "That feels great",
+      "option2": "Whatever, doesn't matter",
+      "option3": "I prefer keeping independent space"
+    },
+    "q12": {
+      "text": "I value personal space in any relationship.",
+      "option1": "I prefer mutual dependence",
+      "option2": "Depends",
+      "option3": "Yes! (said resolutely)"
+    },
+    "q13": {
+      "text": "Most people are kind-hearted.",
+      "option1": "Actually, evil hearts are more common than hemorrhoids in this world.",
+      "option2": "Maybe.",
+      "option3": "Yes, I choose to believe good people outnumber the bad."
+    },
+    "q14": {
+      "text": "A cute little girl bounces toward you on the street and hands you a lollipop. What's your reaction?",
+      "option1": "Aww she's so nice and cute! She gave me a lollipop!",
+      "option2": "Totally confused, scratching head",
+      "option3": "This might be a new type of scam. Better walk away."
+    },
+    "q15": {
+      "text": "Exams are coming, evening study is mandatory. But you promised your crush to play PUBG tonight. What do you do?",
+      "option1": "Skip it! Just this once!",
+      "option2": "Just ask for leave.",
+      "option3": "Exams are coming, no way I'm going."
+    },
+    "q16": {
+      "text": "I like breaking rules and hate being constrained.",
+      "option1": "Agree",
+      "option2": "Neutral",
+      "option3": "Disagree"
+    },
+    "q17": {
+      "text": "I usually have clear goals when doing things.",
+      "option1": "Disagree",
+      "option2": "Neutral",
+      "option3": "Agree"
+    },
+    "q18": {
+      "text": "Suddenly I realized: what's the meaning of life? Humans are just animals driven by desires, controlled by hormones...",
+      "option1": "That's right.",
+      "option2": "Maybe yes, maybe no.",
+      "option3": "That's complete nonsense."
+    },
+    "q19": {
+      "text": "I do things mainly to achieve results and progress, not to avoid trouble and risk.",
+      "option1": "Disagree",
+      "option2": "Neutral",
+      "option3": "Agree"
+    },
+    "q20": {
+      "text": "You're constipated on the toilet (30 minutes already). You're more like:",
+      "option1": "Sit another 30 minutes, maybe something will come out.",
+      "option2": "Slap your butt and yell: 'Stupid butt, poop already!'",
+      "option3": "Use a suppository, get it done quickly."
+    },
+    "q21": {
+      "text": "I make decisions decisively, I don't like hesitating.",
+      "option1": "Disagree",
+      "option2": "Neutral",
+      "option3": "Agree"
+    },
+    "q22": {
+      "text": "This question has no text. Please choose blindly.",
+      "option1": "After thinking, maybe A?",
+      "option2": "Um, maybe B?",
+      "option3": "Just go with C?"
+    },
+    "q23": {
+      "text": "When someone says you have 'strong execution', which response is closer to your heart?",
+      "option1": "I'm only super productive when pushed to the last minute...",
+      "option2": "Well, sometimes.",
+      "option3": "Yes, things should be pushed forward."
+    },
+    "q24": {
+      "text": "I often make plans, ____",
+      "option1": "but plans never keep up with changes.",
+      "option2": "sometimes I complete them, sometimes not.",
+      "option3": "and I hate it when plans get disrupted."
+    },
+    "q25": {
+      "text": "You made many online friends through gaming and got invited to meet offline. Your thoughts?",
+      "option1": "Online chatting is fine, but meeting in person is nerve-wracking.",
+      "option2": "Meeting online friends is fine, whoever chats I'll chat back.",
+      "option3": "I'll dress up and chat enthusiastically. You never know!"
+    },
+    "q26": {
+      "text": "A friend brings their friend to hang out. Your most likely state is:",
+      "option1": "Natural distance from 'friend's friend', worried it affects our dynamic.",
+      "option2": "Depends on the person, if we click we click.",
+      "option3": "Friend's friend should also be my friend! Gotta chat warmly."
+    },
+    "q27": {
+      "text": "I have an electronic fence when socializing — get too close and the alarm goes off.",
+      "option1": "Agree",
+      "option2": "Neutral",
+      "option3": "Disagree"
+    },
+    "q28": {
+      "text": "I desire close relationships with people I trust, as familiar as long-lost relatives.",
+      "option1": "Agree",
+      "option2": "Neutral",
+      "option3": "Disagree"
+    },
+    "q29": {
+      "text": "Sometimes you disagree with something negatively but end up staying silent. Usually because:",
+      "option1": "This rarely happens to me.",
+      "option2": "Maybe out of politeness or relationship concerns.",
+      "option3": "Don't want others to know I have dark thoughts."
+    },
+    "q30": {
+      "text": "I show different sides of myself to different people.",
+      "option1": "Disagree",
+      "option2": "Neutral",
+      "option3": "Agree"
+    }
+  },
+  "personality": {
+    "CTRL": {
+      "name": "The Controller",
+      "intro": "How about it, got you figured out?",
+      "desc": "Congratulations, you've got the rarest personality in the nation. You are a natural rebel against the law of entropy! CTRL personality is a walking task manager. What others call 'rules' are just factory default settings for you; what mortals call 'plans' are just your casual doodles. Having a CTRL friend means your life navigation becomes more precise and efficient."
+    },
+    "ATM-er": {
+      "name": "The Giver",
+      "intro": "Do you think I'm rich?",
+      "desc": "Congratulations, you've got one of the rarest personalities in the world. ATM-er may not literally 'give money', but they're always 'paying' — paying time, energy, patience, paying for a peaceful night that should have been calm."
+    },
+    "Dior-s": {
+      "name": "The Loser",
+      "intro": "Wait for my comeback.",
+      "desc": "Congratulations! You are not a loser, you are the spiritual successor of Diogenes. Dior-s personality is the most thorough contempt for modern consumerism and success-obsessed manipulation. They haven't 'given up', they've already seen through that all 'ambition' leads to is a fancier cage."
+    },
+    "BOSS": {
+      "name": "The Leader",
+      "intro": "Give me the wheel, I'll drive.",
+      "desc": "BOSS always has the steering wheel in hand. Even when the fuel light is on and the GPS is nonsense, they'll deadpan: 'I'll drive.' And actually get there. Their world is like a completed game — everyone else is still on the tutorial."
+    },
+    "THAN-K": {
+      "name": "The Grateful",
+      "intro": "I thank the heavens! I thank the earth!",
+      "desc": "You should thank me! Thank you for having the nourishment of life in this moment! THAN-K has a gentle nature and an all-embracing heart. In their eyes, there are no completely bad people, only 'friends not yet illuminated by the light of gratitude'."
+    },
+    "OH-NO": {
+      "name": "The Worrier",
+      "intro": "Oh no! How did I get this personality?!",
+      "desc": "'Oh no!' is not a scream of fear, but top-tier wisdom. When ordinary people see a cup on the table's edge, the Worrier sees an epic disaster from water stain to short circuit to fire to evacuation to economic loss to butterfly effect to apocalypse."
+    },
+    "GOGO": {
+      "name": "The Goer",
+      "intro": "gogogo~ Let's go!",
+      "desc": "GOGO lives in an extreme 'what you see is what you get' world. Their life motto is brutally simple: close my eyes, sky is dark; spend all money, have no money. Perfect logical closure, impossible to refute."
+    },
+    "SEXY": {
+      "name": "The Bombshell",
+      "intro": "You are a natural stunner!",
+      "desc": "When you walk into a room, the lighting system automatically recognizes you as a natural beauty and dims itself to save energy. When you smile, the surrounding air humidity drops significantly because water vapor condenses into heart shapes in people's eyes."
+    },
+    "LOVE-R": {
+      "name": "The Romantic",
+      "intro": "Love overflows, reality seems barren.",
+      "desc": "Your emotional processor isn't binary — it's rainbow. A falling leaf isn't just 'autumn is here', it's a thirteen-act tragicomedy about reincarnation, sacrifice, and wordless love. Your inner world is like a theme park that never closes."
+    },
+    "MUM": {
+      "name": "The Mom",
+      "intro": "Maybe... I could call you mom?",
+      "desc": "Mom's base color is gentleness, skilled at sensing emotions, with super empathy. Like a doctor, healing others' unhappiness. Unfortunately, when Mom sheds tears, the medicine they give themselves is always a smaller dose than what they give others."
+    },
+    "FAKE": {
+      "name": "The Chameleon",
+      "intro": "There are no humans left.",
+      "desc": "In social situations, the Chameleon is the master of all faces, switching personality masks faster than switching phone keyboards. You thought you made a friend who truly gets you? Wake up. You just met a highly adaptable, high-performance android."
+    },
+    "OJBK": {
+      "name": "The Whatever",
+      "intro": "When I say whatever, I mean whatever.",
+      "desc": "This isn't lack of opinion — it's a ruling philosophy. When mortals face the epochal choice of 'rice or noodles for lunch', Whatever personality dismissively utters: Either's fine. This isn't being easy — it's telling you: your mundane choices are beneath their notice."
+    },
+    "MALO": {
+      "name": "The Monkey",
+      "intro": "Life is a dungeon, and I'm just a monkey.",
+      "desc": "Your soul is still stuck in the tree-swinging, banana-loving era. When human ancestors decided to come down from trees, walk upright, and wear suits, the Monkey's ancestor watched from a nearby tree, scratched its butt, and let out a dismissive 'squeak'."
+    },
+    "JOKE-R": {
+      "name": "The Jester",
+      "intro": "Turns out we're all jesters.",
+      "desc": "JOKE-R isn't a 'person', more like a walking joke. Open one layer, it's a joke; another layer, a gag; keep opening until the very center... it's empty, with only a faint echo: 'Hah, didn't see that coming.'"
+    },
+    "WOC!": {
+      "name": "The Wower",
+      "intro": "WTF, how did I get this personality?",
+      "desc": "WOC! people have two independent operating systems: one called 'Surface System' that outputs 'WTF!' 'Awesome!' 'Huh?'; another called 'Background System' that calmly analyzes: 'Yep, exactly as I expected.'"
+    },
+    "THIN-K": {
+      "name": "The Thinker",
+      "intro": "Deep in thought for 100s.",
+      "desc": "Your brain is in thinking mode for extended periods. You excel at auditing information, focusing on arguments, evidence, logical reasoning, potential biases, and even 'the author's three-generation ideological background investigation report'."
+    },
+    "SHIT": {
+      "name": "The Cynic",
+      "intro": "This world is a pile of crap.",
+      "desc": "SHIT's behavioral pattern is a shocking paradox drama. Mouth: 'This project is shit.' Hands: silently opening Excel, building function models and Gantt charts. Mouth: 'These colleagues are all shit.' Hands: staying up late to clean up their mess."
+    },
+    "ZZZZ": {
+      "name": "The Sleeper",
+      "intro": "I'm not dead, I'm just sleeping.",
+      "desc": "99+ messages in the group? Ignored. But when '@Everyone: 30 minutes left' appears, you rise from your millennium-old tomb like a mummy, slowly typing 'received', then deliver a barely-passing result in 29 minutes."
+    },
+    "POOR": {
+      "name": "The Focused",
+      "intro": "I'm poor, but I'm devoted.",
+      "desc": "This 'poverty' isn't about wallet balance — it's resource reallocation after desire minimalism. You compress energy into a laser beam, wherever it points, it starts smoking. You're not resource-poor, you've poured everything into one pit."
+    },
+    "MONK": {
+      "name": "The Monk",
+      "intro": "No worldly desires whatsoever.",
+      "desc": "MONK has seen through worldly illusions. Their personal space is sacred ground, their absolute domain. Intruders feel a suffocating pressure from the soul. Planets maintain millions of kilometers between them to form a harmonious universe — why can't people?"
+    },
+    "IMSB": {
+      "name": "The Conflicted",
+      "intro": "Seriously? Am I really an idiot?",
+      "desc": "Your brain houses two immortal ultimate warriors: one says 'Let's f***ing go!' and the other says 'I'm an idiot!' When facing someone you like, the former says go get their WeChat! The latter says why would they like you? Result: staring at their back until they disappear."
+    },
+    "SOLO": {
+      "name": "The Lone Wolf",
+      "intro": "I'm crying, how am I a lone wolf?",
+      "desc": "Don't rush to cry — coronation ceremonies are usually solo. Lone Wolves have low self-worth, so they sometimes actively distance from others, building a Great Wall called 'Don't Touch Me' around their soul. Every brick is a past wound."
+    },
+    "FUCK": {
+      "name": "The Rebel",
+      "intro": "F***! What personality is this?",
+      "desc": "In FUCK's worldview, worldly rules are meaningless. Their emotion switch is physical: FUCK YEAH and FUCK OFF. When everyone's been tamed into compliant poultry, FUCK is the last wolf howl in the wilderness."
+    },
+    "DEAD": {
+      "name": "The Deceased",
+      "intro": "Am I still alive?",
+      "desc": "The Deceased have seen through meaningless philosophical thinking, so they seem to have 'lost' interest in everything. They look at the world like a top player who's completed all main quests, side quests, and hidden tasks, restarted 999 times, and finally realized: this game has no point."
+    },
+    "IMFW": {
+      "name": "The Fragile",
+      "intro": "Am I really... useless?",
+      "desc": "Give a Fragile person a piece of candy, they'll give you a completely trusting, sparkling look. You're not useless — you're just too unguarded, too easily sincere. Your self-esteem is fragile, you lack security, but you can precisely sense the strongest WiFi signal around — the person you trust most."
+    },
+    "HHHH": {
+      "name": "The Laughing",
+      "intro": "Hahahahahaha.",
+      "desc": "Congratulations! Your thought circuits are so unconventional that the standard personality database has completely crashed. This personality only appears when the first match rate falls below 60%. What are its traits? Hahahahahahahahaha! Sorry, that's all the traits."
+    },
+    "DRUNK": {
+      "name": "The Drunk",
+      "intro": "Strong liquor burns the throat, must get drunk.",
+      "desc": "Why do you walk swaying? Why are you always emotionally charged? Why do you see double? Because what flows in your veins isn't blood — it's delicious baijiu! You've grown accustomed to pouring liquor into a thermos and drinking it like water."
+    }
+  }
+}
