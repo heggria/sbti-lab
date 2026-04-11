@@ -46,24 +46,26 @@ export function useQuiz() {
     (value: number) => {
       if (!currentQuestion) return
       try { navigator.vibrate?.(10) } catch { /* no-op */ }
-      store.answerQuestion(currentQuestion.id, value)
+      const { answerQuestion, setResult, setPhase, nextQuestion } = useQuizStore.getState()
+      answerQuestion(currentQuestion.id, value)
       if (isLastQuestion) {
+        const fresh = useQuizStore.getState()
         const allAnswers = [
-          ...store.answers.filter((a) => a.questionId !== currentQuestion.id),
+          ...fresh.answers.filter((a) => a.questionId !== currentQuestion.id),
           { questionId: currentQuestion.id, value },
         ]
-        const result = matchPersonality(allAnswers, questions, store.specialAnswers)
-        store.setResult(result)
-        if (store.pkChallenge) {
-          store.setPhase('pk-compare')
+        const result = matchPersonality(allAnswers, questions, fresh.specialAnswers)
+        setResult(result)
+        if (fresh.pkChallenge) {
+          setPhase('pk-compare')
         } else {
-          store.setPhase('result')
+          setPhase('result')
         }
       } else {
-        setTimeout(() => store.nextQuestion(), 300)
+        setTimeout(() => nextQuestion(), 300)
       }
     },
-    [currentQuestion, isLastQuestion, store],
+    [currentQuestion, isLastQuestion],
   )
 
   const dimensionVector = useMemo(() => {
